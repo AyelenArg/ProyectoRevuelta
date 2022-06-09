@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* FONDO COMPLETO PARA BODY *********************************************************/
+body {
+    background-image: url(..//img/IMG-20220520-WA0099.jpg);
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+
+}
+
+/* HEADER *****************************************************************************/
+header {
+    background-color: rgba(245, 245, 220, 0.632);
+    width: 1260px;
+    height: 20%;
+    display: flex
+}
+
+header .logo {
+    display: inline-block;
+    margin: 0px 80px;
+    padding: 35px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ .nav{
+     display: flex;
+     align-items: flex-end;
+ }
+.menu li a {
+    margin: 15px;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #d4bea9a5;
+    color: antiquewhite;
+    text-decoration: none;
+    display: flex;
+
+}
+
+.menu li a:hover {
+    background-color: #f6f6e9c7;
+    color: #a1866c9f;
+
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+.submenu li {
+    display: block 150px;
+    padding: 10px;
+    background-color: #d4bea9a5;
+    color: antiquewhite;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* MAIN*************************************************************** */
+
+.main {
+    display: grid;
+    background-color: #fafaedcc;
+    height: 1000px;
+    width: 1273px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows:  0.2fr 1.6fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "sectionhome sectionhome sectionhome sectionhome"
+        "imghome imghome textohome textohome ."
+        "basehome basehome basehome buttontienda";
+}
+
+.sectionhome {
+    grid-area: sectionhome;
+    display: inline-block;
+}
+
+.imghome img{
+    grid-area: imghome;
+    width: 400px;
+    display: inline-block;
+    margin: 40px 40px;
+    padding: 15px;
+    background-color: #a1866c62;
+    position: absolute;
+
+}
+
+.textohome {
+    grid-area: textohome;
+    display: inline-block;
+    background-color: #f6f6e9c7;
+    color: #a1866c;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    width: 600px;
+    position: relative;
+    margin: 95px 0px 0px 550px;
+    padding: 30px;
+
+}
+.buttonconocenos a {
+    background-color: #a1866c9f;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 14px;
+    display: inline-block;
+    margin: 5px 0px 0px 450px;
+    padding: 8px;
+    text-decoration: none;
+    color: #f6f6e9c7;
+}
+
+.buttonconocenos a:hover {
+    background-color: #f6f6e9c7;
+    color: #a1866c9f;
+}
+.basehome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.basehome img {
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    margin: 100px 30px 100px 50px;
+    background-color: #a1866c62;
+}
+
+.buttontienda{
+    display: inline-flex;
+}
+
+.buttontienda a {
+    grid-area: buttontienda;
+    background-color: #a1866c9f;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 14px;
+    margin: 500px 30px 400px 20px;
+    padding: 8px;
+    text-decoration: none;
+    color: #f6f6e9c7;
+}
+.buttontienda a:hover {
+    background-color: #f6f6e9c7;
+    color: #a1866c9f;
+}
+
+
+.titulohome {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    background-color: rgba(245, 245, 220, 0.445);
+    color: #d4bea9de;
+    display: block;
+    text-align: left;
+    padding: 13px;
+    margin: 8px;
+}
+
+
+
+
+
+
+/* Nuestra esencia html********************************** */
+
+.imgesencia img {
+    width: 450px;
+    margin: 50px 680px;
+    padding: 10px;
+    background-color: #a1866c8b;
+    display: inline-block;
+    position: absolute;
+}
+
+.textoesencia p {
+    display: inline-block;
+    background-color: rgba(246, 246, 233, 0.779);
+    color: #a1866c;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    width: 500px;
+    margin: 150px 80px;
+    padding: 30px;
+}
+
+.textoesencia img {
+    width: 100px;
+    margin: 35px 360px 10px;
+}
+
+
+/* Objetos html***************************************** */
+
+.nuestrosobjetos {
+    display: block;
+    text-align: left;
+    padding: 13px;
+    margin: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    background-color: rgba(245, 245, 220, 0.445);
+    color: #d4bea9de;
+}
+
+.parrafoobjetos {
+    display: block;
+    text-align: justify;
+    padding: 22px;
+    margin: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    background-color: rgba(246, 246, 233, 0.779);
+    color: #a1866c;
+}
+
+.imgobjetos img {
+    background-color: #e9dcd1b3;
+    width: 210px;
+    height: auto;
+    padding: 5px;
+    margin: 40px 40px 10px 40px;
+}
+
+.textobjetos li {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: rgba(245, 245, 220, 0.576);
+    color: #a1866cd0;
+    padding: 3px;
+    margin: 0px 110px;
+}
+
+/* Tienda html********************************************** */
+ 
+.titulotienda { 
+    display: block;
+   max-height: 2.8rem;
+    text-align: left;
+    padding: 15px;
+    margin: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(245, 245, 220, 0.445);
+    color: #d4bea9de;
+}
+
+.tienda {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 0.3fr 0fr 0.3fr 0.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "tienda1 tienda1 tienda1 tienda1"
+      "descrip1 descrip1 descrip1 descrip1"
+      "tienda2 tienda2 tienda2 tienda2"
+      "descrip2 descrip2 descrip2 descrip2"; 
+  }
+
+  .tienda1 { grid-area: tienda1; 
+display: flex;
+
+}
+
+.tienda1 img {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 220px;
+    padding: 5px;
+    margin: 20px 40px 0px 30px;
+    background-color: #a1866c61;
+}
+  
+.descrip1 { grid-area: descrip1; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.descrip1 li {
+
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #a1866c;
+    font-weight: bold;
+    background-color: #f5f5dcc0;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+}
+  
+.tienda2 { grid-area: tienda2; 
+display: flex;
+justify-content: flex-start;
+}
+
+.tienda2 img {
+    flex-direction: row;
+    width: 220px;
+    padding: 5px;
+    margin: 60px 30px 10px;
+    background-color: #a1866c61;
+}
+  
+.descrip2 { grid-area: descrip2; 
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+}
+  
+.descrip2 li {
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #a1866c;
+    font-weight: bold;
+    background-color: #f5f5dcc0;
+    padding: 5px;
+    margin: 0px 60px 0px 60px;
+}
+
+
+/* Contacto html *********************************/
+
+.contacto {
+    display: block;
+    text-align: left;
+    padding: 13px;
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    color: #d4bea9de;
+    background-color: rgba(245, 245, 220, 0.445);
+    margin: 8px;
+    top: 25px;
+}
+
+form {
+    display: inline-block;
+    padding: 30px;
+    margin: 50px;
+    background-color: rgba(245, 245, 220, 0.445);
+    color: #d4bea9de;
+    border: #d4bea9de solid 2px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    background-color: rgba(245, 245, 220, 0.317);
+    color: #d4bea9fe;
+    padding: 12px;
+    border-radius: 15px;
+    border-color: #d4bea9fe;
+
+
+}
+
+
+/* FOOTER******************************************* */
+footer {
+    background-color: rgba(245, 245, 220, 0.632);
+    padding: 35px;
+    height: 25%;
+    width: 1190px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer i {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 35px;
+    color: #d4bea9d2;
+    text-align: right;
+}
+
+
+/* Responsive - media query - Mobile*/
+@media (max-width: 794px){
+
+    .main {
+        background-color: #fafaedcc;
+        height: 1000px;
+        width: 1273px;
+        grid-template-areas:
+            "sectionhome sectionhome sectionhome sectionhome"
+            "imghome imghome textohome textohome ."
+            "basehome basehome"
+            "basehome tiendabutton";
+    }
+    body {
+        background-image: url(..//img/IMG-20220520-WA0099.jpg);
+        background-size: 200% 110%;
+        background-repeat: no-repeat;
+    
+    }
+    header .logo {
+        display: inline-block;
+        margin: 5px 30px;
+        padding: 35px;
+    }
+
+    .imghome img{
+        grid-area: imghome;
+        max-width: 300px;
+        display: inline-block;
+        margin: 40px 40px;
+        padding: 15px;
+        background-color: #a1866c62;
+        position: absolute;
+    
+    }
+
+    .textohome {
+        grid-area: textohome;
+        display: inline-block;
+        background-color: #f6f6e9c7;
+        color: #a1866c;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        max-width: 370px;
+        position: relative;
+        margin: 55px 0px 0px 450px;
+        padding: 30px;
+    
+    }
+    .buttonconocenos a {
+        background-color: #a1866c9f;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 14px;
+        display: inline-block;
+        margin: 20px 0px 0px 250px;
+        padding: 8px;
+        text-decoration: none;
+        color: #f6f6e9c7;
+    }
+    
+.redes a {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 35px;
+    color: #d4bea9d2;
+    text-align: center;
+}
+
+}
