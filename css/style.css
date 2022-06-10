@@ -272,83 +272,142 @@ header .menu {
     margin: 8px;
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
-    background-color: rgba(245, 245, 220, 0.445);
+    background-color: #f5f5dc71;
     color: #d4bea9de;
 }
 
-.tienda {
+section .container1 .container2{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.3fr 0.3fr 0fr 0.3fr 0.3fr; 
+    grid-template-rows: 0.3fr 0.3fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "tienda1 tienda1 tienda1 tienda1"
-      "descrip1 descrip1 descrip1 descrip1"
-      "tienda2 tienda2 tienda2 tienda2"
-      "descrip2 descrip2 descrip2 descrip2"; 
+      "card card card card"
+      "card card card card"
+  }
+  .container1{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .container1 .card{
+    padding: 5px;
+    width: 250px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 .5px .5px;
+    overflow-y: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f5f5dc97;
+  }
+  .container1 .card:hover{
+    translate: -15;
+  }
+  .container1 .card img{
+    padding: 2px;
+    width: 200px;
+    height: 250px;
+  }
+  .container1 h4{
+    font-family: 'Quicksand', sans-serif;
+    color: #a1866c;
+    font-weight: bold;
+    margin: 12px 0 15px;
+    padding: 4px;
+    background-color: #f5f5dca9;
+
+  }
+  .container1 .card p{
+    font-family: 'Quicksand', sans-serif;
+    background-color:#f5f5dca9 ;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 2px 8px 2px;
+    margin: 2px;
+    color: #a1866c;
   }
 
-  .tienda1 { grid-area: tienda1; 
-display: flex;
+  .container1 .card a{
+    text-decoration: none;
+    color: #f5f5dca9;
+    font-size: 15px;
+    font-family:'Quicksand', sans-serif ;
+    background-color: #a1866ca0;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 4px;
+    
+  }
+  .container1 .card a:hover{
+    box-shadow: 0 3px 4px 0;
 
-}
+  }
 
-.tienda1 img {
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 220px;
-    padding: 5px;
-    margin: 20px 40px 0px 30px;
-    background-color: #a1866c61;
-}
-  
-.descrip1 { grid-area: descrip1; 
+  .container2{
+    width: 100%;
+    height: 430px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.descrip1 li {
-
-    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .container2 .card{
+    padding: 5px;
+    width: 250px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 .5px .5px;
+    overflow-y: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f5f5dc97;
+  }
+  
+  .container2 .card img{
+    padding: 2px;
+    width: 200px;
+    height: 250px;
+  }
+  .container2 h4{
     font-family: 'Quicksand', sans-serif;
     color: #a1866c;
     font-weight: bold;
-    background-color: #f5f5dcc0;
-    padding: 5px;
-    margin: 10px 10px 10px 10px;
-}
-  
-.tienda2 { grid-area: tienda2; 
-display: flex;
-justify-content: flex-start;
-}
+    margin: 12px 0 15px;
+    padding: 4px;
+    background-color: #f5f5dca9;
 
-.tienda2 img {
-    flex-direction: row;
-    width: 220px;
-    padding: 5px;
-    margin: 60px 30px 10px;
-    background-color: #a1866c61;
-}
-  
-.descrip2 { grid-area: descrip2; 
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-justify-content: space-around;
-}
-  
-.descrip2 li {
-    list-style: none;
+  }
+  .container2 .card p{
     font-family: 'Quicksand', sans-serif;
-    color: #a1866c;
+    background-color:#f5f5dca9 ;
+    font-size: 16px;
     font-weight: bold;
-    background-color: #f5f5dcc0;
-    padding: 5px;
-    margin: 0px 60px 0px 60px;
-}
+    padding: 8px 2px 8px 2px;
+    margin: 2px;
+    color: #a1866c;
+  }
+
+  .container2 .card a{
+    text-decoration: none;
+    color: #f5f5dca9;
+    font-size: 15px;
+    font-family:'Quicksand', sans-serif ;
+    background-color: #a1866ca0;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 4px;
+    
+  }
+  .container2 .card a:hover{
+    box-shadow: 0 3px 4px 0;
+  }
+  
 
 
 /* Contacto html *********************************/
