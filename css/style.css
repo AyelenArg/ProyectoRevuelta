@@ -406,6 +406,8 @@ section .container1 .container2{
   }
   .container2 .card a:hover{
     box-shadow: 0 3px 4px 0;
+    transform: scale(1.5);
+    transition: 2s;
   }
   
 
@@ -435,19 +437,18 @@ form {
 }
 
 button {
-    background-color: rgba(245, 245, 220, 0.317);
+    background-color: #f5f5dc51;
     color: #d4bea9fe;
     padding: 12px;
     border-radius: 15px;
     border-color: #d4bea9fe;
-
-
 }
 
 
 /* FOOTER******************************************* */
 footer {
-    background-color: rgba(245, 245, 220, 0.632);
+    /* background-color: rgba(245, 245, 220, 0.632); */
+    background-image: linear-gradient(to top right, #f5f5dcc4, #d4bea9ac, #f5f5dcc4);
     padding: 35px;
     height: 25%;
     width: 1190px;
