@@ -7,8 +7,9 @@
 
 /* FONDO COMPLETO PARA BODY *********************************************************/
 body {
-    background-image: url(..//img/IMG-20220520-WA0099.jpg);
-    background-size: 100% 110%;
+    background-image: url("../img/oliver-sjostrom-tJaeqWh5cG0-unsplash.jpg");
+    filter: opacity(100%);
+    background-size: 100%;
     background-repeat: no-repeat;
 
 }
@@ -465,6 +466,7 @@ footer i {
     color: #be9e80;
     text-align: right;
 }
+
 
 
 /* Responsive - media query - Mobile*/
