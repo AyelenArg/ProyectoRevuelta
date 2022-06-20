@@ -16,70 +16,54 @@ body {
 }
 
 /* HEADER *****************************************************************************/
-header {
-    background-color: rgba(245, 245, 220, 0.632);
-    width: 100vw;
-    height: 20%;
-    display: flex
+
+.navbar{
+    background-color: #f5f5dca1 !important;
 }
 
-header .logo {
-    display: inline-block;
-    margin: 0px 80px;
-    padding: 35px;
-}
-
-header .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
- .nav{
-     display: flex;
-     align-items: flex-end;
- }
-
- .menu li{
-    justify-content: flex-end;
- }
-.menu li a {
-    margin: 15px;
-    padding: 5px;
+.nav-link{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    background-color: #d4bea9a5;
+    background-color: #d4bea965;
     color: antiquewhite;
-    text-decoration: none;
-    display: flex;
-    border-radius: 7px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+}
+.navbar-nav{
+    align-items: flex-end;
 
 }
 
-.menu li a:hover {
+.nav-link:hover{
     background-color: #f6f6e9c7;
     color: #a1866c9f;
-
 }
 
+.dropdown-menu{
+    background-color: #d4bea971;
+    border: 0px;
+  }
 
-.submenu {
-    display: none;
-    position: absolute;
-    list-style: none;
-}
-
-.submenu li {
-    display: block 150px;
-    padding: 10px;
-    background-color: #d4bea9a5;
+.dropdown-item{
     color: antiquewhite;
     font-family: 'Quicksand', sans-serif;
-
+    font-weight: bold;
 }
 
-.menu li:hover .submenu {
-    display: block;
+.dropdown-item:hover{
+    background-color: #f6f6e9c7;
+    color: #a1866c9f;
+}
+
+.collapse{
+    justify-content: end;
+}
+.navbar-toggler{
+    color: #d4bea932;
+    border-radius: 5px #f6f6e9c7;
 }
 
 /* MAIN*************************************************************** */
@@ -504,7 +488,7 @@ footer i {
 
 
 /* Responsive - media query - Mobile*/
-@media (max-width: 794px){
+@media (max-width: 480px){
 
     .main {
         background-color: #fafaedcc;
